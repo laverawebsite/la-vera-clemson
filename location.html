@@ -68,13 +68,12 @@
   <section>
     <div class="container info-grid">
       <div>
-        <div class="map-frame">
-          <iframe
-            title="Map showing La Vera Clemson Mexican Kitchen at 125 Anderson Hwy, Suite 100, Clemson, SC 29631"
-            src="https://www.google.com/maps?q=125+Anderson+Hwy+Suite+100+Clemson+SC+29631&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+        <div class="map-frame" id="mapFrame" data-map-src="https://www.google.com/maps?q=125+Anderson+Hwy+Suite+100+Clemson+SC+29631&output=embed" data-map-title="Map showing La Vera Clemson Mexican Kitchen at 125 Anderson Hwy, Suite 100, Clemson, SC 29631">
+          <button type="button" class="map-load-btn" id="mapLoadBtn" aria-label="Load interactive map showing La Vera Clemson Mexican Kitchen location">
+            <span class="map-load-icon" aria-hidden="true">&#128205;</span>
+            <span class="map-load-text">Tap to load map</span>
+            <span class="map-load-sub">125 Anderson Hwy, Suite 100</span>
+          </button>
         </div>
       </div>
       <div>

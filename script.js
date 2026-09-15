@@ -12,6 +12,22 @@ document.addEventListener('DOMContentLoaded', function () {
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+  // Click-to-load map: keeps the Google Maps request off the initial page
+  // load entirely — it only fires once someone actually wants the map.
+  var mapFrame = document.getElementById('mapFrame');
+  var mapLoadBtn = document.getElementById('mapLoadBtn');
+  if (mapFrame && mapLoadBtn) {
+    mapLoadBtn.addEventListener('click', function () {
+      var iframe = document.createElement('iframe');
+      iframe.title = mapFrame.getAttribute('data-map-title') || 'Map';
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      iframe.src = mapFrame.getAttribute('data-map-src');
+      mapFrame.innerHTML = '';
+      mapFrame.appendChild(iframe);
+    });
+  }
+
   // Catering form validation
   var form = document.getElementById('cateringForm');
   if (form) {
