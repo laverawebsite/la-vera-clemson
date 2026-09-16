@@ -252,6 +252,13 @@ table.price-table th { color: var(--color-text-muted); font-weight: 600; font-si
   overflow: hidden;
   margin-bottom: 40px;
 }
+.menu-board-image img {
+  aspect-ratio: 1536 / 922;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top center;
+}
 .menu-board-image figcaption {
   font-size: 0.8rem; color: var(--color-text-muted); padding: 10px 16px; background: var(--color-white);
 }
