@@ -251,13 +251,14 @@ table.price-table th { color: var(--color-text-muted); font-weight: 600; font-si
   border: 1px solid var(--color-border);
   overflow: hidden;
   margin-bottom: 40px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu-board-image img {
-  aspect-ratio: 1536 / 922;
   width: 100%;
   height: auto;
-  object-fit: cover;
-  object-position: top center;
+  display: block;
 }
 .menu-board-image figcaption {
   font-size: 0.8rem; color: var(--color-text-muted); padding: 10px 16px; background: var(--color-white);
