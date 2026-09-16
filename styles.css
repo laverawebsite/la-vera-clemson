@@ -104,21 +104,15 @@ p { margin: 0 0 1em; }
   justify-content: space-between;
   gap: 16px;
 }
-.wordmark {
-  font-family: var(--font-heading);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: #fff;
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
 }
-.wordmark span {
+.logo-img {
+  height: 92px;
+  width: auto;
   display: block;
-  font-family: var(--font-body);
-  font-style: normal;
-  font-size: 0.65rem;
-  letter-spacing: 3px;
-  color: var(--color-secondary-light);
-  margin-top: 2px;
 }
 .main-nav {
   display: flex;
@@ -133,6 +127,7 @@ p { margin: 0 0 1em; }
 .nav-toggle { display: none; }
 
 @media (max-width: 760px) {
+  .logo-img { height: 60px; }
   .main-nav { display: none; }
   .nav-toggle {
     display: inline-flex;
