@@ -104,20 +104,13 @@ p { margin: 0 0 1em; }
   gap: 16px;
 }
 .wordmark {
-  font-family: var(--font-heading);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: #fff;
-}
-.wordmark span {
   display: block;
-  font-family: var(--font-body);
-  font-style: normal;
-  font-size: 0.65rem;
-  letter-spacing: 3px;
-  color: var(--color-accent);
-  margin-top: 2px;
+  line-height: 0;
+}
+.wordmark img {
+  height: 44px;
+  width: auto;
+  display: block;
 }
 .main-nav {
   display: flex;
